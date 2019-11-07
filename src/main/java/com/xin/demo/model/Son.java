@@ -14,15 +14,6 @@ package com.xin.demo.model;
  * 子类构造函数
  * 答案：：b d a c
  */
-class Father {
-    public Father(){
-        System.out.println("a");
-    }
-    static {
-        System.out.println("b");
-    }
-}
-
 public class Son extends Father {
     public Son() {
         System.out.println("c");
@@ -32,5 +23,13 @@ public class Son extends Father {
     }
     public static void main (String[] args){
         new Son();
+    }
+}
+class Father {
+    public Father(){
+        System.out.println("a");
+    }
+    static {
+        System.out.println("b");
     }
 }
