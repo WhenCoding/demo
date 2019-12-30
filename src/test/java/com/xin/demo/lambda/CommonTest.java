@@ -19,10 +19,10 @@ public class CommonTest {
             e.printStackTrace();
         }
     }
-    @Test
     /**
-     * 同个lambda可以不同的函数是接口
+     * 同个lambda可以不同的函数式接口
      */
+    @Test
     public void test2(){
         Comparator<Apple> comparator1 = (Apple a1,Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
         ToIntBiFunction<Apple,Apple> comparator2 = (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
